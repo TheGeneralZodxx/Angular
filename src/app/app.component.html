@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div  style="text-align:center">
+ <table border="1">
+   <thead>
+     <th>Id</th>
+     <th>Name</th>
+     <th>Email</th>
+   </thead>
+   <tbody *ngFor='let user of users$'>
+     <tr>
+       <td>
+         {{user.id}}
+       </td>
+       <td>
+        {{user.name}}
+      </td>
+      <td>
+        {{user.email}}
+      </td>
+     </tr>
+   </tbody>
+ </table>
+ 
+</div>
+
+
+<router-outlet></router-outlet>
